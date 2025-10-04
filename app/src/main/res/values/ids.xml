@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="main" type="id" />
+    <item name="room_type" type="id" />
+    <item name="room_price" type="id" />
+    <item name="room_image" type="id" />
+    <item name="roomdescription" type="id" />
+</resources>
+

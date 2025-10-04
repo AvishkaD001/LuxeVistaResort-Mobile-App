@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Top Bar -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:background="#213A58"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/hotel_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:text="LuxeVista Resort"
+                android:textColor="#FFFFFF"
+                android:textSize="26sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/subtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Your Profile"
+                android:textColor="#D3D3D3"
+                android:textSize="16sp"
+                android:layout_marginTop="4dp" />
+        </LinearLayout>
+
+        <!-- Progress Bar (Hidden by Default) -->
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone" />
+
+        <!-- User Details Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#FFFFFF"
+            android:padding="16dp"
+            android:elevation="2dp"
+            android:layout_marginTop="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Your Details"
+                android:textSize="20sp"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="#333333"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/user_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Name: "
+                android:textSize="16sp"
+                android:padding="8dp"
+                android:textColor="#555555" />
+
+            <TextView
+                android:id="@+id/user_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Email: "
+                android:textSize="16sp"
+                android:padding="8dp"
+                android:textColor="#555555" />
+
+            <TextView
+                android:id="@+id/user_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Phone: "
+                android:textSize="16sp"
+                android:padding="8dp"
+                android:textColor="#555555" />
+        </LinearLayout>
+
+        <!-- Booking History Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#FFFFFF"
+            android:padding="16dp"
+            android:elevation="2dp"
+            android:layout_marginTop="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Booking History"
+                android:textSize="20sp"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="#333333"
+                android:layout_marginBottom="8dp" />
+
+            <LinearLayout
+                android:id="@+id/room_bookings_section"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <!-- Dynamic Room Booking Items will be added here -->
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Services Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#FFFFFF"
+            android:padding="16dp"
+            android:elevation="2dp"
+            android:layout_marginTop="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Services"
+                android:textSize="20sp"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="#333333"
+                android:layout_marginBottom="8dp" />
+
+            <LinearLayout
+                android:id="@+id/services_section"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <!-- Dynamic Services Items will be added here -->
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Rating Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#FFFFFF"
+            android:padding="16dp"
+            android:elevation="2dp"
+            android:layout_marginTop="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Rate Your Experience"
+                android:textSize="20sp"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="#333333"
+                android:layout_marginBottom="8dp" />
+
+            <!-- Text Rating -->
+            <EditText
+                android:id="@+id/user_rating_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Leave a message about your experience"
+                android:padding="8dp"
+                android:background="#F5F5F5"
+                android:textSize="16sp"
+                android:layout_marginBottom="8dp" />
+
+            <!-- Numeric Rating -->
+            <RatingBar
+                android:id="@+id/user_rating_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:stepSize="1"
+                android:numStars="5"
+                android:rating="0"
+                android:layout_gravity="center"
+                android:layout_marginBottom="8dp" />
+
+            <!-- Rate Button -->
+            <Button
+                android:id="@+id/rate_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Submit Rating"
+                android:backgroundTint="#4CAF50"
+                android:textColor="#FFFFFF"
+                android:padding="16dp"
+                android:textSize="16sp"
+                android:elevation="4dp" />
+        </LinearLayout>
+
+        <!-- Logout Button -->
+        <Button
+            android:id="@+id/logout_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Log Out"
+            android:backgroundTint="#E91E63"
+            android:textColor="#FFFFFF"
+            android:padding="16dp"
+            android:textSize="16sp"
+            android:layout_marginTop="24dp"
+            android:elevation="4dp" />
+    </LinearLayout>
+</ScrollView>

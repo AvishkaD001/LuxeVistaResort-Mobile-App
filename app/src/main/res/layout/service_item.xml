@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/ServiceImage"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/ServiceType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Service:"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/ServiceDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Description:"
+        android:textSize="14sp"
+        android:layout_marginTop="4dp" />
+
+    <TextView
+        android:id="@+id/ServicePrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ServicePrice:"
+        android:textSize="16sp"
+        android:textColor="@android:color/holo_green_dark"
+        android:layout_marginTop="4dp" />
+
+    <Button
+        android:id="@+id/bookServiceButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Book Service"
+        android:layout_marginTop="8dp" />
+</LinearLayout>
+
+
+
+
+

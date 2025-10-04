@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffff"> <!-- Light neutral background -->
+
+    <!-- Top Bar -->
+    <LinearLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="#213A58"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/hotel_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:text="LuxeVista Resort"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your Gateway to Luxury"
+            android:textColor="#D3D3D3"
+            android:textSize="16sp"
+            android:layout_marginTop="4dp"/>
+    </LinearLayout>
+
+    <!-- Button Section -->
+    <LinearLayout
+        android:id="@+id/button_section"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/top_bar"
+        android:layout_marginTop="60dp"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:gravity="center">
+
+        <!-- Room View Button -->
+        <Button
+            android:id="@+id/roomviewButton"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:text="Room View"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#0c6478"
+            android:layout_margin="8dp"
+            android:padding="16dp"
+            android:elevation="4dp"
+            android:textStyle="bold" />
+
+        <!-- Services Button -->
+        <Button
+            android:id="@+id/ServiceviewButton"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:text="Services"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#11698e"
+            android:layout_margin="8dp"
+            android:padding="16dp"
+            android:elevation="4dp"
+            android:textStyle="bold" />
+
+        <!-- User Profile Button -->
+        <Button
+            android:id="@+id/UserprofileButton"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:text="User Profile"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#0c6478"
+            android:layout_margin="8dp"
+            android:padding="16dp"
+            android:elevation="4dp"
+            android:textStyle="bold" />
+
+        <!-- About Button -->
+        <Button
+            android:id="@+id/aboutviewButton"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:text="About Us"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#11698e"
+            android:layout_margin="8dp"
+            android:padding="16dp"
+            android:elevation="4dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</RelativeLayout>

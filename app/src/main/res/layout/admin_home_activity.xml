@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffff"> <!-- Light neutral background -->
+
+    <!-- Top Bar -->
+    <LinearLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="#213A58"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/hotel_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:text="Admin panel"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HOME"
+            android:textColor="#D3D3D3"
+            android:textSize="16sp"
+            android:layout_marginTop="4dp"/>
+    </LinearLayout>
+
+    <!-- Button Section -->
+    <LinearLayout
+        android:id="@+id/button_section"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/top_bar"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:gravity="center">
+
+
+        <Button
+            android:id="@+id/roomAddButton"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:backgroundTint="#0c6478"
+            android:text="Add Room"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/ServiceaddButton"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:text="Add Services"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#11698e"
+            android:textStyle="bold" />
+
+        <!-- User Profile Button -->
+        <Button
+            android:id="@+id/UserviewButton"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:text="User View"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#0c6478"
+            android:textStyle="bold" />
+
+
+
+        <Button
+            android:id="@+id/roombookButton"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:text="View Room Books"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#11698e"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/servicebookButton"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:text="View Service Books"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#11698e"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</RelativeLayout>

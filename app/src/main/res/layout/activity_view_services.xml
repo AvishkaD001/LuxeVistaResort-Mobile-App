@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="#213A58"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/hotel_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:text="LuxeVista Resort"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your Gateway to Luxury"
+            android:textColor="#D3D3D3"
+            android:textSize="16sp"
+            android:layout_marginTop="4dp"
+            android:textAlignment="center" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="12dp">
+
+    <EditText
+        android:id="@+id/searchBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="210dp"
+        android:hint="Search Service Type" />
+
+    <EditText
+        android:id="@+id/minPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Min Price"
+        android:layout_below="@id/searchBar" />
+
+    <EditText
+        android:id="@+id/maxPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Max Price"
+        android:layout_below="@id/minPrice" />
+
+    <Button
+        android:id="@+id/searchButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Search"
+        android:layout_below="@id/maxPrice"
+        android:layout_alignParentEnd="true" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/searchButton"
+        android:layout_marginTop="8dp" />
+</RelativeLayout>
+</RelativeLayout>
