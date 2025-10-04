@@ -1,0 +1,5 @@
+com.example.luxevistaresort.test.app-core-1.6.1-0 C:\Users\Avishka\.gradle\caches\transforms-3\ea2e72c1e314c4ba13df9fd6028aa0a7\transformed\core-1.6.1\res
+com.example.luxevistaresort.test.app-androidTest-1 C:\Users\Avishka\AndroidStudioProjects\LuxeVistaResort\app\build\generated\res\resValues\androidTest\debug
+com.example.luxevistaresort.test.app-mergeDebugAndroidTestResources-2 C:\Users\Avishka\AndroidStudioProjects\LuxeVistaResort\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\merged.dir
+com.example.luxevistaresort.test.app-mergeDebugAndroidTestResources-3 C:\Users\Avishka\AndroidStudioProjects\LuxeVistaResort\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\stripped.dir
+com.example.luxevistaresort.test.app-debugAndroidTest-4 C:\Users\Avishka\AndroidStudioProjects\LuxeVistaResort\app\build\intermediates\merged_res\debugAndroidTest\mergeDebugAndroidTestResources
