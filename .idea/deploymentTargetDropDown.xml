@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="deploymentTargetDropDown">
+    <value>
+      <entry key="AboutActivity">
+        <State />
+      </entry>
+      <entry key="ActiveLoginpage">
+        <State />
+      </entry>
+      <entry key="AdminLogin">
+        <State />
+      </entry>
+      <entry key="HomeActivity">
+        <State />
+      </entry>
+      <entry key="MainActivity">
+        <State />
+      </entry>
+      <entry key="ViewRoomActivity">
+        <State />
+      </entry>
+      <entry key="ViewServiceActivity">
+        <State />
+      </entry>
+    </value>
+  </component>
+</project>
